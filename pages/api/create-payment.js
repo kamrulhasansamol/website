@@ -11,8 +11,8 @@ export default async function handler(req,res){
         amount: 50,
         currency: "BDT",
         metadata: { uid },
-        redirect_url: "https://yourdomain.vercel.app/success",
-        cancel_url: "https://yourdomain.vercel.app"
+        redirect_url: "https://website-henna-theta-59.vercel.app/success",
+        cancel_url: "https://website-henna-theta-59.vercel.app"
       })
     });
     const data = await response.json();
@@ -20,4 +20,5 @@ export default async function handler(req,res){
   } catch (err) {
     res.status(500).json({ error: "Payment creation failed" });
   }
+
 }
