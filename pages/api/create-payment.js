@@ -5,7 +5,7 @@ export default async function handler(req,res){
       method:"POST",
       headers:{
         "Content-Type":"application/json",
-        "Authorization":"Bearer YOUR_ZINIPAY_API_KEY"
+        "Authorization":"Bearer 318d94ca6dd65f7ecf7ef6c30ea41b71df7447afe73aae94"
       },
       body:JSON.stringify({
         amount: 50,
@@ -22,3 +22,4 @@ export default async function handler(req,res){
   }
 
 }
+
